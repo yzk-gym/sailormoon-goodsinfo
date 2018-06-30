@@ -5,7 +5,7 @@
 
 # Example:
 #
-# set :output, "/path/to/my/cron_log.log"
+set :output, "/path/to/my/cron_log.log"
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
@@ -19,3 +19,10 @@
 
 # Learn more: http://github.com/javan/whenever
 
+ every 1.day , :at => '0:00 am' do
+  runner "model.goods_info"
+ end
+
+every 1.minute do
+  runner "Tasks::scraping.text"
+end

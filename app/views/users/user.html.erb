@@ -1,0 +1,13 @@
+<session>
+  <h1>グッズ情報</h1>
+  <p><%= @tweet.count%></p>
+  <div class="tweets_area">
+    <% @tweet.each do | tweet | %>
+      <div class="tweet_box">
+        <p class="item"><%= tweet.user.name %></p>
+        <p class="item"><%= tweet.text %></p>
+        <p class="item"><%= %></p>
+        </div>
+    <% end %>
+  </div>
+</session>

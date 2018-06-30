@@ -1,0 +1,3 @@
+  <%= @tweets.tweet.each do | tweet | %>
+  <p><%= tweet.user.screen_name %> : <%= tweet.text %></p>
+  <%= end %>

@@ -1,0 +1,17 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ body {
+     background-color: aliceblue;
+ }
+
+.tweet_box {
+  margin: 4em 3em 4em 3em;
+  background-color: white;
+  border: 0.1em solid lightgray;
+  border-radius: 1em;
+  .item {
+    padding :1em;
+  }
+}

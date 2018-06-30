@@ -9,7 +9,6 @@ class GoodsController < ApplicationController
   charset = nil
     html = open(url).read
 
-  @array = Array.new()
   count = 0
 
     contents = Nokogiri::HTML.parse(html,url,nil,'Shift_JIS')
@@ -39,9 +38,7 @@ class GoodsController < ApplicationController
 
       data_list = [name, date,image]
 
-      @array.push(data_list)
 
     end
-
-    end
+  end
 end

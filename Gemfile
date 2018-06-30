@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'twitter'
 gem 'byebug'
 gem 'nokogiri'
+gem 'whenever',require: false
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

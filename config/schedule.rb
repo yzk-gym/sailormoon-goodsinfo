@@ -2,6 +2,8 @@
 #
 # It's helpful, but not entirely necessary to understand cron before proceeding.
 # http://en.wikipedia.org/wiki/Cron
+#
+set :environment, Rails.env
 
 # Example:
 #
@@ -18,11 +20,9 @@ set :output, "/path/to/my/cron_log.log"
 # end
 
 # Learn more: http://github.com/javan/whenever
+#
+
 
  every 1.day , :at => '0:00 am' do
-  runner "model.goods_info"
+  runner "Tasks::Scraping.goods_info"
  end
-
-every 1.minute do
-  runner "Tasks::scraping.text"
-end

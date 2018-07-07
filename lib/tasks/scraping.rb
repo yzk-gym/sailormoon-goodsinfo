@@ -19,7 +19,7 @@ class Tasks::Scraping
 
       name = itemdata.css("a.ellipsis").text
       date = itemdata.css("div.ellipsis").text
-      image = itemdata.css("img.thumbnail")
+      image = itemdata.css("img.thumbnail").attribute("src").value
 
       name.slice!(%r{\s+})
 
@@ -30,14 +30,12 @@ class Tasks::Scraping
 
       date = date.slice(%r{\d+/\d+/\d+})
 
-      if Item.find(id = count) == nil
+
           item = Item.new({id:count,name:name,date:date,image:image})
           item.save
-      end
-    end
-  end
 
-  def self.print_text
-    pp"test"
+    end
+
+    pp "db updated"
   end
 end

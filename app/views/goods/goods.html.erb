@@ -1,7 +1,9 @@
-<div>
+<div class="conteiner">
 <% @array.each do | data |%>
-  <div><%= data[0] %></div>
-    <div><%= data[1] %></div>
-    <div><%= data[2] %></div>
+    <nav class="item_box">
+      <li class="item"><%= data.name %></li>
+      <li class="item"><%= data.date %></li>
+      <li class="item"><%= data.image %></li>
+    </nav>
 <% end %>
   </div>

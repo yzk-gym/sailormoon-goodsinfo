@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/search_for_twitter_app.iml" filepath="$PROJECT_DIR$/.idea/search_for_twitter_app.iml" />
+      <module fileurl="file://$USER_HOME$/CounterWorks/shopcounter_helpdesk/.idea/shopcounter_helpdesk.iml" filepath="$USER_HOME$/CounterWorks/shopcounter_helpdesk/.idea/shopcounter_helpdesk.iml" />
     </modules>
   </component>
 </project>

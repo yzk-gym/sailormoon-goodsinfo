@@ -8,5 +8,6 @@ class GoodsController < ApplicationController
 
     @array = Array.new()
     @array = Item.all
+
   end
 end

@@ -1,0 +1,10 @@
+module Search::SearchItems
+
+  class << self
+
+    def search(name)
+      @items = Items.Where.(:name => name)
+    end
+
+  end
+end
